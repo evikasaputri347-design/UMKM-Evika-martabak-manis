@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martabak Manis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assests/logo-martabak.png" alt="Logo Martabak">
+            <h2>Martabak <span>Manis</span></h2>
+        </div>
+
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#menu">Menu</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="beranda">
+        <div class="hero-text">
+            <p class="label">MANISNYA BIKIN BAHAGIA</p>
+            <h1>Setiap Gigitan,<br>
+                <span>Rasa Bahagia.</span>
+            </h1>
+            <p>
+                Martabak manis yang lembut, topping melimpah,
+                dan rasa lezat yang bikin ingin lagi.
+            </p>
+            <a href="#menu" class="btn">Lihat Menu ↗</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="assests/rasa-coklat.jpg" alt="Martabak Coklat">
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <p class="label">PILIHAN FAVORIT</p>
+        <h2>Temukan Rasa <span>Favoritmu</span></h2>
+
+        <div class="menu-container">
+            <div class="card">
+                <img src="assests/rasa-kacang.jpg" alt="Martabak Kacang">
+                <div class="card-content">
+                    <h3>Rasa Kacang</h3>
+                    <p>Perpaduan kacang yang gurih dan manis!</p>
+                    <button onclick="pilihRasa('Kacang')">
+                        Pilih Rasa
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assests/rasa-coklat.jpg" alt="Martabak Coklat">
+                <div class="card-content">
+                    <h3>Rasa Coklat</h3>
+                    <p>Manisnya coklat, bikin nagih!</p>
+                    <button onclick="pilihRasa('Coklat')">
+                        Pilih Rasa
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tentang" id="tentang">
+        <img src="assests/logo-martabak.png" alt="Logo Martabak Manis">
+        <div>
+            <p class="label">TENTANG KAMI</p>
+            <h2>Martabak Manis</h2>
+            <p>
+                Lembut di dalam, lumer di setiap gigitan.
+                Dibuat untuk menemani momen manis bersama
+                keluarga dan sahabat.
+            </p>
+        </div>
+    </section>
+
+    <section class="kontak" id="kontak">
+        <p class="label">PESAN FAVORITMU</p>
+        <h2>Yuk, pilih martabakmu!</h2>
+
+        <form id="form-pesan">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" placeholder="Masukkan nama" required>
+
+            <label for="rasa">Pilih rasa:</label>
+            <select id="rasa">
+                <option value="Kacang">Martabak Kacang</option>
+                <option value="Coklat">Martabak Coklat</option>
+            </select>
+
+            <button type="submit">Buat Pesanan</button>
+        </form>
+        <p id="hasil"></p>
+    </section>
+
+    <footer>
+        <h3>Martabak <span>Manis</span> ♥</h3>
+        <p>Lembut di dalam, lumer di setiap gigitan.</p>
+        <p>&copy; <span id="tahun"></span> Martabak Manis</p>
+    </footer>
+
+</body>
+</html>

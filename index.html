@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martabak Manis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a href="#beranda" class="logo">
+            <img src="assets/logo-martabak.png" alt="logo">
+            <span>Martabak <b>Manis</b></span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Buka menu">☰</button>
+
+        <nav class="navigation">
+            <a href="#beranda">Beranda</a>
+            <a href="#menu">Menu</a>
+            <a href="#tentang">Tentang Kami</a>
+            <a href="#lokasi">Lokasi</a>
+            <a href="#kontak" class="nav-button">Pesan Sekarang</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="beranda">
+        <div class="hero-text">
+            <span class="tag">✦ MANISNYA BIKIN BAHAGIA</span>
+
+            <h1>Setiap Gigitan,<br>
+                <em>Rasa Bahagia.</em>
+            </h1>
+
+            <p>
+                Martabak manis hangat dengan tekstur lembut,
+                topping melimpah, dan rasa yang bikin ingin lagi.
+            </p>
+
+            <a href="#menu" class="button">Lihat Menu ↗</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="assets/rasa-coklat.jpg"
+                 alt="HARGA:15.000">
+            <span class="sticker">Fresh & Sweet ♥</span>
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <div class="section-title">
+            <span class="tag">PILIHAN FAVORIT</span>
+            <h2>Menu <em>Martabak Kami</em></h2>
+            <p>Pilih rasa favoritmu dan nikmati manisnya!</p>
+        </div>
+
+        <div class="menu-container">
+            <div class="product-card">
+                <img src="assets/rasa-kacang.jpg"
+                     alt="HARGA:20.000">
+
+                <div class="product-info">
+                    <span class="tag">GURIH & MANIS</span>
+                    <h3>HARGA:20.000</h3>
+                    <p>
+                        Perpaduan kacang yang gurih dan manis,
+                        dengan martabak lembut di setiap gigitan.
+                    </p>
+
+                    <button class="order-button"
+                            data-flavor="Kacang">
+                        Pesan Sekarang ↗
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/rasa-coklat.jpg"
+                     alt="Martabak rasa coklat">
+
+                <div class="product-info">
+                    <span class="tag">COKLAT MELIMPAH</span>
+                    <h3>HARGA:25.000</h3>
+                    <p>
+                        Manisnya coklat yang lumer berpadu
+                        dengan martabak empuk. Bikin nagih!
+                    </p>
+
+                    <button class="order-button"
+                            data-flavor="Coklat">
+                        Pesan Sekarang ↗
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="tentang">
+        <div class="about-logo">
+            <img src="assets/logo-martabak.png"
+                 alt="Logo Martabak Manis">
+        </div>
+
+        <div>
+            <span class="tag">TENTANG KAMI</span>
+            <h2>Manisnya Sederhana,<br>
+                <em>Bahagianya Terasa.</em>
+            </h2>
+
+            <p>
+                Martabak Manis hadir untuk menemani waktu
+                santai kamu dengan martabak yang lembut,
+                topping melimpah, dan rasa yang istimewa.
+            </p>
+
+            <p>♥ Lembut di dalam, lumer di setiap gigitan.</p>
+        </div>
+    </section>
+
+    <section class="location" id="lokasi">
+        <div class="section-title">
+            <span class="tag">INFO TOKO</span>
+            <h2>Kunjungi <em>Toko Kami</em></h2>
+        </div>
+
+        <div class="info-container">
+            <div class="info-card">
+                <span>📍</span>
+                <h3>Lokasi</h3>
+                <p>Swembat</p>
+            </div>
+
+            <div class="info-card">
+                <span>🕒</span>
+                <h3>Jam Operasional</h3>
+                <p>Mulai pukul 11.00</p>
+            </div>
+
+            <div class="info-card">
+                <span>💬</span>
+                <h3>WhatsApp</h3>
+                <p>083192869198</p>
+                <a href="https://wa.me/6283192869198"
+                   target="_blank" rel="noopener">
+                    Chat WhatsApp ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="kontak">
+        <div class="section-title">
+            <span class="tag">PESAN FAVORITMU</span>
+            <h2>Yuk, Pesan <em>Sekarang!</em></h2>
+            <p>Isi formulir untuk memesan martabak favoritmu.</p>
+        </div>
+
+        <form id="order-form">
+            <label for="nama">Nama kamu</label>
+            <input type="text" id="nama"
+                   placeholder="Masukkan nama" required>
+
+            <label for="rasa">Pilih rasa</label>
+            <select id="rasa">
+                <option value="Kacang">Martabak Kacang</option>
+                <option value="Coklat">Martabak Coklat</option>
+            </select>
+
+            <label for="jumlah">Jumlah pesanan</label>
+            <input type="number" id="jumlah"
+                   min="1" value="1" required>
+
+            <label for="catatan">Catatan</label>
+            <textarea id="catatan"
+                      placeholder="Catatan tambahan (opsional)"></textarea>
+
+            <button type="submit" class="button">
+                Pesan via WhatsApp ↗
+            </button>
+        </form>
+    </section>
+
+    <footer>
+        <h3>Martabak <em>Manis</em> ♥</h3>
+        <p>Lembut di dalam, lumer di setiap gigitan.</p>
+        <p>📍 Swembat | 🕒 Mulai pukul 11.00</p>
+        <p>WhatsApp: 083192869198</p>
+        <small>© <span id="year"></span> Martabak Manis</small>
+    </footer>
+
+</body>
+</html>
